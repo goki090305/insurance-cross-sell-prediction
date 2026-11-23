@@ -1,0 +1,123 @@
+# Insurance Cross-Sell Prediction Using Machine Learning
+
+## Project Overview
+
+Insurance Cross-Sell Prediction is a Machine Learning project that predicts whether an existing health insurance customer is likely to purchase vehicle insurance.
+
+The project uses customer information, vehicle details, and insurance-related features to build predictive classification models. The objective is to help insurance companies identify potential customers and improve their marketing strategies.
+
+## Objectives
+
+- Predict customer interest in purchasing vehicle insurance.
+- Perform Exploratory Data Analysis (EDA).
+- Apply data preprocessing and feature engineering.
+- Handle class imbalance using SMOTE.
+- Train and compare multiple Machine Learning models.
+- Evaluate model performance using classification metrics.
+
+## Dataset
+
+The dataset contains 381,109 records and 12 features.
+
+**Target Variable:** `Response`
+
+- 1 – Customer is interested in purchasing vehicle insurance.
+- 0 – Customer is not interested in purchasing vehicle insurance.
+
+**Important Features:**
+- Gender
+- Age
+- Region_Code
+- Vintage
+- Driving_License
+- Vehicle_Age
+- Vehicle_Damage
+- Annual_Premium
+- Policy_Sales_Channel
+
+Dataset source: Kaggle – Health Insurance Cross Sell Prediction.
+
+## Technologies Used
+
+- **Programming Language:** Python
+- **Libraries:** NumPy, Pandas, Scikit-learn
+- **Machine Learning:** Random Forest, CatBoost and other classification algorithms
+- **Data Visualization:** Matplotlib, Seaborn
+- **Development Environment:** Jupyter Notebook, VS Code
+
+## Project Workflow
+
+1. Data Collection
+2. Exploratory Data Analysis (EDA)
+3. Data Cleaning and Preprocessing
+4. Categorical Encoding using Label Encoding
+5. Feature Scaling using StandardScaler
+6. Handling Class Imbalance using SMOTE
+7. Train-Test Split (80:20)
+8. Model Training and Hyperparameter Tuning using RandomizedSearchCV
+9. Model Evaluation and Comparison
+
+## Machine Learning Models
+
+The project compares multiple classification algorithms, including:
+
+- Random Forest
+- CatBoost
+- Other evaluated classification models
+
+## Model Performance
+
+The final CatBoost model achieved the following results:
+
+| Metric | Performance |
+|---|---:|
+| Accuracy | 90.94% |
+| ROC-AUC Score | 0.976 |
+
+**Class-wise Performance:**
+
+| Class | Precision | Recall |
+|---|---:|---:|
+| 0 | 0.89 | 0.94 |
+| 1 | 0.93 | 0.88 |
+
+Random Forest also achieved approximately 92% accuracy and 0.98 ROC-AUC during model comparison.
+
+## Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- ROC-AUC Curve
+
+## Project Files
+
+- `final_year_project (1).ipynb` – Jupyter Notebook containing the implementation and analysis.
+- `Final_Year_Project.py` – Python source code.
+
+## Applications
+
+- Customer targeting for insurance companies.
+- Identifying potential vehicle insurance customers.
+- Supporting data-driven marketing strategies.
+- Improving customer conversion opportunities.
+
+## Future Enhancements
+
+- Implement Explainable AI techniques using SHAP and LIME.
+- Develop an interactive prediction interface using Flask or Streamlit.
+- Deploy the trained model as a web application.
+
+## Author
+
+**Gokula Lakshmi M.**
+
+M.Sc. Computer Science
+
+[GitHub Profile](https://github.com/goki090305) | [LinkedIn Profile](https://www.linkedin.com/in/m-gokula-lakshmi-541919331/)
+
+---
+
+*This project was developed as part of my Machine Learning learning and project work.*
